@@ -27,6 +27,8 @@
 #
 #
 
+import /vendor/etc/init/hw/init.fpc.rc
+
 on early-init
     mkdir /firmware 0771 system system
     mkdir /bt_firmware 0771 system system

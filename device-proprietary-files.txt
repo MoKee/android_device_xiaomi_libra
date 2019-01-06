@@ -256,6 +256,10 @@ lib64/hw/consumerir.msm8992.so:vendor/lib64/hw/consumerir.msm8992.so
 vendor/lib/hw/vulkan.msm8992.so|8bd98116b5a586839aad4c93468fc04f044d4ef4
 vendor/lib64/hw/vulkan.msm8992.so|123f72ad06ab296028dc5d14884453630676027f
 
+# Fingerprint
+vendor/lib64/libcom_fingerprints_service.so|84184194dc22c7f82892862f142977bc2c81d6eb
+vendor/lib64/hw/fingerprint.fpc.so|9cbb143331d590b7931ef379b55d6aff09dd879b
+
 # Keystore
 vendor/lib/hw/keystore.msm8992.so
 vendor/lib64/hw/keystore.msm8992.so

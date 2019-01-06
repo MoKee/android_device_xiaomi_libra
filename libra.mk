@@ -24,6 +24,17 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_platform_info.xml:system/vendor/etc/audio_platform_info.xml \
     $(DEVICE_PATH)/audio/mixer_paths.xml:system/vendor/etc/mixer_paths.xml
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/uinput-fpc.kl:system/vendor/usr/keylayout/uinput-fpc.kl \
+    $(DEVICE_PATH)/configs/uinput-fpc.idc:system/vendor/usr/idc/uinput-fpc.idc
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/vendor/etc/permissions/android.hardware.fingerprint.xml
+
 # IRQ
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
@@ -57,4 +68,5 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.fpc.rc \
     init.target.rc
